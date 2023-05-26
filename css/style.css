@@ -1,3 +1,127 @@
 body{
-	background-color: red;
+	font-family: 'Playfair', serif;
+	padding: 0;
+	margin: 0;
+
+
+}
+
+h1{
+	font-family: 'Playfair', serif;
+	font-weight: 800;
+	font-size: 70px;
+	color: white;
+	margin:14px 0 20px;
+}
+
+.hero-banner{
+	background-color: lightseagreen;
+	height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+
+}
+
+.wrapper{
+	width: 960px;
+/*i deleted margin 0 auto,,,remember	*/
+	
+
+}
+
+.stallone{
+	background: url(img/stallone.png) no repeat 0 0;
+	background-size: 100%;
+	width: 363px;
+	height: 344px;
+	position: absolute; top: 117px; right: 10px;
+
+}
+
+.statham{
+	background: url("../img/statham.png") transparent;
+	background-size: 100%;
+	width: 309px;
+	height: 371px;
+	position: absolute; top: 213px; right: 10px;
+
+}
+
+.terry{
+	background: url("../img/terry.png") no repeat 0 0;
+	background-size: 100%;
+	width: 297px;
+	height: 286px;
+	position: absolute; bottom: 74px; right: 1px;
+
+}
+
+h4{
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+.hero-banner h4{
+	color: white;
+	margin: 0;
+}
+h2{
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+.hero-banner h2{
+	color: white;
+	margin:0 0 15px;
+}
+h3{
+	font font-weight: bold;
+	font-size: 30px;
+}
+.hero-banner h3{
+	color: white;
+	margin: 0 0 35px;
+}
+
+a.cta.alt,
+button.cta{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background: royalblue;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+
+}
+a.cta.alt{
+	background-color: #ffd400;
+	box-shadow:177 135 44 10px rgba(177,135,44,.15);
+	color: black;
+}
+
+/*
+<div class="hero-banner">
+		<div class="wrapper">
+			<h4>Ochibo-JJ presents:</h4>
+			<h1>The EXPENDABLES</h1>
+			<h2>An Ensemble &amp;<br>
+			Action Thriller Franchise<br>
+			Spanning A Film Series!</h2>
+			<h3>Written By Sylvester Stallone &amp; Produced By Basil Iwanyk And Guymon Casady.<br>
+			Based Upon Characters Created By David Callaham.</h3>
+			<a class="cta alt" href="#more-info">Read More</a>
+		</div>
+		<div class="stallone"></div>
+		<div class="statham"></div>
+		<div class="terry"></div>
+	</div>
+*/
+img{
+	/*this width is set by me */
+	width: 900px;
 }
