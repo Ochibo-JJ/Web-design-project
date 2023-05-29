@@ -19,18 +19,38 @@ h1{
 	height: 100vh;
 	padding: 50px 20px;
 	box-sizing: border-box;
+	position:relative;
+	overflow: hidden;
 
 }
 
-.wrapper{
+.hero-banner .wrapper{
 	width: 960px;
 /*i deleted margin 0 auto,,,remember	*/
 	
 
 }
-
+.exlogo{
+	background: url(../img/ex-logo.png) no-repeat 0 0 ;
+	background-size: 100%;
+	width: 300px;
+    border-radius: 104px;
+    height: 186px;
+    position: absolute; top: 10px;  right: 10px; 
+    opacity: .9; 
+}
+.group{
+	background: url(../img/bgc-image.png) no-repeat 0 0 ;
+	background-size: 100%;
+	border-radius: 90px;
+	opacity: .9;
+	width: 500px;
+	height: 300px;
+	position: absolute; top: 40vh; right: 10px;
+}
+/*
 .stallone{
-	background: url(img/stallone.png) no repeat 0 0;
+	background: url(img/stallone.png) no-repeat 0 0;
 	background-size: 100%;
 	width: 363px;
 	height: 344px;
@@ -39,7 +59,7 @@ h1{
 }
 
 .statham{
-	background: url("../img/statham.png") transparent;
+	background: url("../img/statham.png") no-repeat 0 0;
 	background-size: 100%;
 	width: 309px;
 	height: 371px;
@@ -48,14 +68,14 @@ h1{
 }
 
 .terry{
-	background: url("../img/terry.png") no repeat 0 0;
+	background: url("../img/terry.png") no-repeat 0 0;
 	background-size: 100%;
 	width: 297px;
 	height: 286px;
 	position: absolute; bottom: 74px; right: 1px;
 
 }
-
+*/
 h4{
 	font-weight: bold;
 	font-size: 20px;
@@ -85,6 +105,7 @@ h3{
 	margin: 0 0 35px;
 }
 
+
 a.cta.alt,
 button.cta{
 	font-size: 30px;
@@ -92,7 +113,7 @@ button.cta{
 	color: white;
 	background: royalblue;
 	display: inline-block;
-	box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
+	box-shadow: 2px 2px 9px 6px rgba(0, 0, 0, .3);
 	padding: 20px 30px;
 	border-radius: 10px;
 	text-decoration: none;
@@ -100,27 +121,64 @@ button.cta{
 }
 a.cta.alt{
 	background-color: #ffd400;
-	box-shadow:177 135 44 10px rgba(177,135,44,.15);
+	box-shadow:3px 1px 10px 9px rgba(17, 35, 4, .5);
 	color: black;
 }
-
-/*
-<div class="hero-banner">
-		<div class="wrapper">
-			<h4>Ochibo-JJ presents:</h4>
-			<h1>The EXPENDABLES</h1>
-			<h2>An Ensemble &amp;<br>
-			Action Thriller Franchise<br>
-			Spanning A Film Series!</h2>
-			<h3>Written By Sylvester Stallone &amp; Produced By Basil Iwanyk And Guymon Casady.<br>
-			Based Upon Characters Created By David Callaham.</h3>
-			<a class="cta alt" href="#more-info">Read More</a>
-		</div>
-		<div class="stallone"></div>
-		<div class="statham"></div>
-		<div class="terry"></div>
-	</div>
-*/
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	position: sticky;
+	top: 0;
+	
+}
+a.logo{
+	font-family: 'Press Start 2P', cursive;
+	display: block;
+	width: 300px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 20px;
+	position: absolute; top: 40%; left: 20px;
+}
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+nav ul li{
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: right;
+}
+nav ul li a{
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	color: #111111;
+	text-decoration: none;
+	padding: 35px 20px;
+	line-height: 30px;
+}
+p{
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 42px;
+}
+.more-info .wrapper{
+	margin: 0 auto;
+	width: 960px;
+}
+.more-info{
+	text-align: center;
+}
+.highlight{
+	color: #e50000;
+	display: inline-block;
+}
 img{
 	/*this width is set by me */
 	width: 900px;
