@@ -25,7 +25,8 @@ h1{
 }
 
 .hero-banner .wrapper{
-	width: 960px;
+	width: 1000px;
+	margin-left: 0;
 /*i deleted margin 0 auto,,,remember	*/
 	
 
@@ -48,34 +49,7 @@ h1{
 	height: 300px;
 	position: absolute; top: 40vh; right: 10px;
 }
-/*
-.stallone{
-	background: url(img/stallone.png) no-repeat 0 0;
-	background-size: 100%;
-	width: 363px;
-	height: 344px;
-	position: absolute; top: 117px; right: 10px;
 
-}
-
-.statham{
-	background: url("../img/statham.png") no-repeat 0 0;
-	background-size: 100%;
-	width: 309px;
-	height: 371px;
-	position: absolute; top: 213px; right: 10px;
-
-}
-
-.terry{
-	background: url("../img/terry.png") no-repeat 0 0;
-	background-size: 100%;
-	width: 297px;
-	height: 286px;
-	position: absolute; bottom: 74px; right: 1px;
-
-}
-*/
 h4{
 	font-weight: bold;
 	font-size: 20px;
@@ -117,7 +91,11 @@ button.cta{
 	padding: 20px 30px;
 	border-radius: 10px;
 	text-decoration: none;
-
+	cursor: pointer;
+}
+a.cta.alt:active,
+button.cta:active{
+	opacity: .7;
 }
 a.cta.alt{
 	background-color: #ffd400;
@@ -130,6 +108,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
 	position: sticky;
 	top: 0;
+	z-index: 1;
 	
 }
 a.logo{
@@ -165,12 +144,12 @@ nav ul li a{
 }
 p{
 	font-size: 30px;
-	font-weight: normal;
-	line-height: 42px;
+	font-weight: 500;
+	line-height: 36px;
 }
-.more-info .wrapper{
+.wrapper{
 	margin: 0 auto;
-	width: 960px;
+	width: 1000px;
 }
 .more-info{
 	text-align: center;
@@ -179,7 +158,82 @@ p{
 	color: #e50000;
 	display: inline-block;
 }
-img{
-	/*this width is set by me */
-	width: 900px;
+.sep{
+	width: 470px;
+	height: 10px;
+	background-color: #111111;
+	margin: 60px auto;
+}
+.nb-list{
+	width: 600px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #ededed;
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
+
+}
+.nb-list li{
+	height: 70px;
+	font-size: 40px;
+	font-weight: bold;
+	border-radius: 10px;
+	display: block;
+	margin-bottom:20px ;
+	color: white;
+}
+.nb-list li.red{background-color: darkolivegreen;}
+.nb-list li.lavender{background-color: lavender;}
+.nb-list li.limedragging{background-color: limegreen;}
+.nb-list li.brown{background-color: darkslategray;}
+.nb-list li.yellow{background-color: maroon;}
+.nb-list li.pink{background-color: hotpink;}
+.nb-list li.blue{background-color: orangered;
+}
+.story h3{
+	font-size: 40px;
+	font-weight: 800;
+}
+.nb-list li.limedragging{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	right: -10px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px 10px rgba(0, 0, 0, .3);
+}
+/*.nb-list li.limedragging:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 54px;
+	height: 50px;
+	background: url(../img/hand.png);
+	background-size: 100%;
+	bottom: 0;
+	left: 60%;
+*/
+.ex-gang{
+	display: block;
+	margin: 0 auto;
+	width: 1000px;
+}
+footer{
+	text-align: center;
+	font-size: 20px;
+	margin: 45px 0 85px;
+	opacity: 80%;
+	color: black;
+	font-weight: bold;
+}
+a.insta{
+	color: red;
+	text-decoration: none;
+}
+a.insta:hover{
+	color: #DFFF00;
+}
+.popup{
+	display: none;
 }
